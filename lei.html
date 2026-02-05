@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nova Cloud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero { background: linear-gradient(135deg, #030b1b 0%, #0a1b3d 100%); position: relative; overflow: hidden; }
+        .hero::before { content: ""; position: absolute; inset: 0; background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); opacity: 0.1; }
+        .card { background: #fff; border-top: 4px solid #2563eb; box-shadow: 0 15px 40px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .f-input { width: 100%; padding: 12px 0; border: none; border-bottom: 1px solid #e2e8f0; outline: none; transition: 0.3s; }
+        .f-input:focus { border-bottom: 1px solid #2563eb; }
+        .f-label { display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; color: #94a3b8; letter-spacing: 0.1em; }
+        .logo-text { font-size: 24px; font-weight: 900; letter-spacing: -1px; color: white; }
+        .logo-cloud { color: #3b82f6; }
+    </style>
+</head>
+<body class="bg-white">
+    <nav class="absolute w-full z-50 py-6 px-10 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="100" rx="12" fill="#2563eb"/>
+                <path d="M30 70V30L50 50L70 30V70" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="logo-text">NOVA<span class="logo-cloud">CLOUD</span></div>
+        </div>
+        <div class="hidden lg:flex space-x-8 text-[12px] font-bold text-white uppercase tracking-wider items-center">
+            <a href="#" class="hover:text-blue-500 transition">Home</a>
+            <a href="#" class="hover:text-blue-500 transition">About</a>
+            <a href="#" class="text-blue-500">Contact</a>
+            <a href="#" class="hover:text-blue-500 transition">Blog</a>
+            <i class="fa fa-search ml-4 cursor-pointer"></i>
+            <i class="fa fa-bars text-blue-500 cursor-pointer text-lg"></i>
+        </div>
+    </nav>
+
+    <header class="hero pt-48 pb-32 text-center text-white relative">
+        <h1 class="text-6xl font-extrabold mb-6 tracking-tight">Contact Us</h1>
+        <div class="text-sm font-medium flex justify-center items-center space-x-2 text-gray-300">
+            <i class="fa fa-home text-blue-500"></i> 
+            <span>Home</span> 
+            <span class="text-gray-600 font-bold">.</span> 
+            <span class="text-blue-500 font-bold">Contact Us</span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-10 -mt-16 relative z-10 pb-20">
+        <div class="grid lg:grid-cols-12 gap-10">
+            <div class="lg:col-span-4 space-y-6">
+                <div class="card p-10 flex space-x-6">
+                    <i class="fa-solid fa-map-location-dot text-blue-600 text-4xl"></i>
+                    <div>
+                        <h3 class="font-extrabold text-slate-900 mb-2">Location</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed text-left">20972 Fowlers Mill Cir, <br>Ashburn, VA 20147</p>
+                    </div>
+                </div>
+                <div class="card p-10 !border-emerald-500 flex space-x-6">
+                    <i class="fa-solid fa-phone-volume text-emerald-500 text-4xl"></i>
+                    <div>
+                        <h3 class="font-extrabold text-slate-900 mb-2">Call Us</h3>
+                        <p class="text-slate-500 text-sm font-bold tracking-wide text-left">+1 (571) 969 9129</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-8 bg-white p-12 lg:p-20 shadow-2xl rounded-sm">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight text-left">We are always happy to hear from you.</h2>
+                <p class="text-slate-500 mb-12 leading-relaxed text-lg text-left">Our team is here to help you anytime until your transformation is done smoothly.</p>
+                <form class="space-y-10 text-left">
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div><label class="f-label">Name</label><input type="text" placeholder="Enter your name" class="f-input"></div>
+                        <div><label class="f-label">Email Address</label><input type="email" placeholder="Enter email" class="f-input"></div>
+                    </div>
+                    <div><label class="f-label">Messages</label><textarea rows="3" placeholder="How can we help?" class="f-input resize-none"></textarea></div>
+                    <button type="button" class="bg-blue-600 hover:bg-slate-900 text-white font-extrabold px-12 py-5 text-[11px] tracking-[0.2em] uppercase transition duration-300">
+                        Send Message <i class="fa fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
